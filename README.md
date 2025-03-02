@@ -5,7 +5,7 @@
 # Relations in Matrix Representation
 
 ## Self-Loop
-A **self-loop** is defined in a matrix by an element \( x \) pointing to itself.
+A **self-loop** is defined in a matrix by an element pointing to itself.
 
 Example:
 ```
@@ -20,15 +20,15 @@ Here, both `a` and `b` have self-loops.
 ## Reflexive Relation
 A relation is **reflexive** if every element in the relation has a self-loop.
 
-- **Condition:** \( G^x \) for all \( x \) in the relation.
+- **Condition:** Every element in the relation must have a self-loop.
 
 ## Anti-Reflexive Relation
 A relation is **anti-reflexive** if every element in the relation **does not** have a self-loop.
 
-- **Condition:** No element in the relation has \( G^x \).
+- **Condition:** No element in the relation has a self-loop.
 
 ## Symmetric Relation
-A relation is **symmetric** if, whenever \( x \) points to \( y \), \( y \) also points to \( x \).
+A relation is **symmetric** if, whenever an element `x` points to `y`, `y` also points to `x`.
 
 Example:
 ```
@@ -38,13 +38,13 @@ a │ 0  1 │
 b │ 1  0 │
   └──────┘
 ```
-This represents \( a \leftrightarrow b \).
+This represents `a ↔ b`.
 
 ### Important Note:
 Elements that **do not point to anything** and **are not pointed to by anything** are **ignored** when assessing symmetry.
 
 ## Anti-Symmetric Relation
-A relation is **anti-symmetric** if, whenever \( x \) points to \( y \), \( y \) **does not** point to \( x \), except in the case of self-loops.
+A relation is **anti-symmetric** if, whenever an element `x` points to `y`, `y` **does not** point to `x`, except in the case of self-loops.
 
 Example:
 ```
@@ -54,10 +54,10 @@ a │ 0  1 │
 b │ 0  0 │
   └──────┘
 ```
-This represents \( a \to b \), but **not** \( b \to a \).
+This represents `a → b`, but **not** `b → a`.
 
 ## Transitive Relation
-A relation is **transitive** if, whenever \( x \) points to \( y \) and \( y \) points to \( z \), then \( x \) must also point to \( z \).
+A relation is **transitive** if, whenever `x` points to `y` and `y` points to `z`, then `x` must also point to `z`.
 
 Example:
 ```
