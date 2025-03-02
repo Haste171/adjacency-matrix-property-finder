@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "adjacency-matrix-property-finder"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <34923485+Haste171@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+networkx = "^3.4.2"
+numpy = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
